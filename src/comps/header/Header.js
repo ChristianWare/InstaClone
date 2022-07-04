@@ -1,11 +1,16 @@
-import styles from './Header.module.css'
+import Image from "next/image";
+import styles from "./Header.module.css";
 
 function Header() {
-    return (
-        <div>
-           <h1>Header Comp</h1> 
-        </div>
-    )
+  return (
+    <header className={styles.headerContainer}>
+      <div className={styles.content}>
+        <div className={styles.left}>Left</div>
+        <div className={styles.middle}>Middle</div>
+        <div className={styles.right}>Right</div>
+      </div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
